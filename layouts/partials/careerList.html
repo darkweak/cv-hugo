@@ -1,0 +1,23 @@
+<div class="pb-4">
+    <h2 class="m-0 uppercase">
+        {{ .title }}
+    </h2>
+</div>
+<div class="space-y-4">
+    {{ range .items }}
+        <div class="w-full p-4 border text-primary rounded-xl">
+        <span class="block text-indigo-400">
+            <span class="text-secondary">——</span> {{ dateFormat "02/01/2006" .from }} - {{ if and (ne .to "") (ne .to nil) }}{{ dateFormat "02/01/2006" .to }}{{ else }}{{ "Aujourd'hui" }}{{ end }}
+        </span>
+        <span class="block text-2xl uppercase">
+            {{ .name }}
+        </span>
+            <span class="block text-lg">
+            {{ .location }}
+        </span>
+            <span class="block text-secondary text-sm">
+            {{ .place }}
+        </span>
+        </div>
+    {{ end }}
+</div>

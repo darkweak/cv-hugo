@@ -1,0 +1,17 @@
+<div class="flex flex-wrap">
+    {{ range .conferences }}
+        <div class="w-full sm:w-1/2 p-4">
+            <a href="{{ .Permalink }}">
+                <div class="rounded-xl overflow-hidden shadow-lg h-40 md:h-48 lg:h-64 relative">
+                    <img class="w-full object-cover h-full" loading="lazy" src="{{ .Params.Image }}" alt="Mountain">
+                    <div class="rounded-xl conference-overlay absolute p-4 md:p-8 transition-all duration-500 top-0 bottom-0 left-0 right-0 flex pointer">
+                        <div class="m-auto text-center text-white">
+                            <span class="block font-bold text-current md:text-lg lg:text-2xl">{{ .Params.Name }}</span>
+                            <span class="block font-bold text-sm">{{ .Params.City }} - {{ dateFormat "02/01/2006" .Params.Date }}</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    {{ end }}
+</div>

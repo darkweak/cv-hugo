@@ -1,0 +1,23 @@
+{{ define "title" }}
+    <h1 class="text-white">
+        COMPÉTENCES
+    </h1>
+    <h2 class="text-white text-inherit">TECHNIQUES</h2>
+{{ end }}
+
+{{ define "content" }}
+    <main class="container flex flex-wrap -mt-32 py-16 space-y-8 flex-grow bg-primary sm:rounded-xl">
+        {{ range .Site.Data.competences }}
+            <div class="w-full border text-primary flex flex-wrap rounded-lg">
+                <div class="w-full text-center">
+                    <h3 class="m-0 py-4 text-4xl">{{ .name }}</h3>
+                </div>
+                {{ range .items }}
+                    <div class="border-t w-full md:w-1/2 lg:w-1/3 text-center py-4">
+                        <a href="{{ .url }}" target="_blank" class="text-2xl no-underline">{{ .name }}</a>
+                    </div>
+                {{ end }}
+            </div>
+        {{ end }}
+    </main>
+{{ end }}

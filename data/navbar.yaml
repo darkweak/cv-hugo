@@ -1,0 +1,10 @@
+- name: Accueil
+  url: /
+- name: Conférences
+  url: /conferences/
+- name: Blog
+  url: /blog/
+- name: Carrière
+  url: /career/
+- name: Compétences
+  url: /skills/

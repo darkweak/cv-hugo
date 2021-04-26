@@ -1,0 +1,21 @@
+{{ define "title" }}
+    <h1 class="text-white uppercase">
+        {{ .Params.Name }}
+    </h1>
+{{ end }}
+
+{{ define "content" }}
+    <main class="container -mt-32 py-16 flex-grow bg-primary sm:rounded-xl">
+        <div class="w-full flex flex-wrap">
+            <aside class="w-full md:w-1/4 pr-0 md:pr-8 text-secondary">
+                <div class="sticky flex-grow top-0">
+                    <span class="text-lg underline">Menu:</span>
+                    {{ .TableOfContents }}
+                </div>
+            </aside>
+            <div class="w-full md:w-3/4 pl-0 md:pl-8">
+                {{ .Content }}
+            </div>
+        </div>
+    </main>
+{{ end }}
