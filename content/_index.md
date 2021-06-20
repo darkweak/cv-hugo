@@ -3,6 +3,6 @@ Je m'appelle Sylvain COMBRAQUE, je suis freelance, conférencier, développeur f
 
 ## Un développeur passionné
 Créateur d'un système de cache pour Træfik nommé [Souin](https://github.com/darkweak/souin). Ce système de cache est compatible avec n'importe quel reverse proxy (Apache, Nginx, etc...) et une intégration pour [Caddy](https://github.com/caddyserver/caddy) en tant que Caddy module est aussi disponible.  
-Je fais de l'open-source dès que possible. Review, PR, débats
+Je fais de l'open-source dès que possible en réalisant des reviews, PRs, débats avec les différents mainteneurs des projets.
 
 ## Mes dernières conférences
