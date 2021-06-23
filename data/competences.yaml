@@ -126,6 +126,10 @@
       url: https://traefik.io
     - name: Caddy
       url: https://caddyserver.com
+    - name: Tyk
+      url: https://tyk.io
+    - name: Longhorn
+      url: https://longhorn.io
     - name: Nginx
       url: https://www.nginx.com
     - name: Apache
