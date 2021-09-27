@@ -1,6 +1,7 @@
 ---
 name: Du cache pour vos applications ; oui et sans Varnish
 link: https://devfest.gdgstrasbourg.fr
+publishDate: 2021-09-27
 date: 2021-11-09
 place: 234 Avenue de Colmar
 city: Strasbourg
