@@ -4,6 +4,11 @@ jobs:
     from: 2019-02-10
     to:
     place: 59000 LILLE
+  - name: Développeur Go
+    location: Actirise / Bricks
+    from: 2021-10-04
+    to:
+    place: 59000 LILLE
   - name: Développeur full-stack
     location: Les-Tilleuls.coop
     from: 2018-07-02
