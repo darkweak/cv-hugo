@@ -107,3 +107,7 @@ blockquote {
     border-left: 8px solid var(--color-bg-secondary);
     padding-left: 1rem;
 }
+
+pre {
+    border-radius: 16px;
+}

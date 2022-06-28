@@ -1,10 +1,3 @@
-{{ define "title" }}
-    <h1 class="text-white">
-        BLOG
-    </h1>
-    <h2 class="text-white text-inherit">ARTICLES TECHNIQUES</h2>
-{{ end }}
-
 {{ define "content" }}
     <main class="container -mt-32 py-16 flex-grow bg-primary sm:rounded-xl">
         <div class="flex flex-wrap">
@@ -12,7 +5,7 @@
                 <div class="w-full sm:w-1/2 p-4">
                     <a href="{{ .Permalink }}">
                         <div class="rounded-xl overflow-hidden shadow-lg h-40 md:h-48 lg:h-64 relative">
-                            <img class="w-full object-cover h-full bg-white" loading="lazy" src="{{ .Params.Image }}" alt="Mountain">
+                            <img class="w-full object-cover h-full bg-white" loading="lazy" src="{{ .Params.Image }}" alt="{{ .Params.Name }} illustration">
                             <div class="rounded-xl conference-overlay absolute p-4 md:p-8 transition-all duration-500 top-0 bottom-0 left-0 right-0 flex pointer">
                                 <div class="m-auto text-center text-white">
                                     <span class="block font-bold text-lg md:text-xl lg:text-3xl">{{ .Params.Name }}</span>

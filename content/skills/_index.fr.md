@@ -1,4 +1,4 @@
 ---
 translationKey: skills
-title: My skills
+title: Mes compétences
 ---

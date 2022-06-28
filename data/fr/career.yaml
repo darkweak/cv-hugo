@@ -1,0 +1,47 @@
+jobs:
+  - name: Développeur freelance
+    location: Auto-entreprise
+    from: 2019-02-10
+    to:
+    place: 75000 PARIS
+  - name: Consultant Go
+    location: Klanik
+    from: 2022-04-11
+    to:
+    place: 75000 PARIS
+  - name: Architecte Go
+    location: Actirise / Bricks
+    from: 2021-10-04
+    to: 2022-04-08
+    place: 59000 LILLE
+  - name: Développeur full-stack
+    location: Les-Tilleuls.coop
+    from: 2018-07-02
+    to: 2021-10-01
+    place: 59000 LILLE
+  - name: Auxiliaire de vacances et technicien de maintenance en milieu bancaire
+    location: Société Générale
+    from: 2017-08-07
+    to: 2017-09-01
+    place: 51100 REIMS
+  - name: Boucher en grande distribution
+    location: E.Leclerc
+    from: 2017-06-26
+    to: 2017-08-05
+    place: 08400 VOUZIERS
+  - name: Animateur en centre aéré
+    location: Centre aéré
+    from: 2016-07-04
+    to: 2016-07-22
+    place: 08130 SAINT-ETIENNE-À-ARNES
+graduates:
+  - name: DUT INFORMATIQUE
+    location: IUT REIMS
+    place: 51100 REIMS
+    from: 2015-09-03
+    to: 2018-07-04
+  - name: BAC S
+    location: LYCÉE THOMAS MASARYK
+    place: 08400 VOUZIERS
+    from: 2012-09-03
+    to: 2015-07-01

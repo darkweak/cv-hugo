@@ -1,0 +1,4 @@
+---
+translationKey: blog
+title: Blog
+---

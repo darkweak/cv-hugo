@@ -1,13 +1,6 @@
-{{ define "title" }}
-    <h1 class="text-white">
-        COMPÉTENCES
-    </h1>
-    <h2 class="text-white text-inherit">TECHNIQUES</h2>
-{{ end }}
-
 {{ define "content" }}
     <main class="container flex flex-wrap -mt-32 py-16 space-y-8 flex-grow bg-primary sm:rounded-xl">
-        {{ range .Site.Data.competences }}
+        {{ range (index .Site.Data .Site.Language.Lang).skills }}
             <div class="w-full border text-primary flex flex-wrap rounded-lg">
                 <div class="w-full text-center">
                     <h3 class="m-0 py-4 text-4xl">{{ .name }}</h3>

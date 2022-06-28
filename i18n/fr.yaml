@@ -1,0 +1,20 @@
+blog:
+  title: BLOG
+  subtitle: ARTICLES TECHNIQUES
+career:
+  title: CARRIÈRE
+  subtitle: EMPLOIS ET DIPLÔMES
+  jobs: emplois
+  diplomas: diplômes
+  today: Aujourd'hui
+home:
+  subtitle: DÉVELOPPEUR - CONFÉRENCIER
+skills:
+  title: COMPÉTENCES
+  subtitle: TECHNIQUES
+talks:
+  title: CONFÉRENCES
+  subtitle: PASSÉES ET À VENIR
+  useful_links: Informations utiles
+  return_to_list: Retour à la liste
+  places: Lien vers les places

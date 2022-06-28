@@ -1,0 +1,20 @@
+blog:
+  title: BLOG
+  subtitle: TECHNCAL ARTICLES
+career:
+  title: CAREER
+  subtitle: JOBS AND DIPLOMAS
+  jobs: jobs
+  diplomas: diplomas
+  today: Today
+home:
+  subtitle: DEVELOPER - SPEAKER
+skills:
+  title: SKILLS
+  subtitle: TECHNICAL
+talks:
+  title: TALKS
+  subtitle: PAST AND UPCOMING
+  useful_links: Useful informations
+  return_to_list: Go back to the list
+  places: Register to the event

@@ -1,17 +1,10 @@
-{{ define "title" }}
-    <h1 class="text-white">
-        CARRIÈRE
-    </h1>
-    <h2 class="text-white text-inherit">EMPLOIS ET DIPLÔMES</h2>
-{{ end }}
-
 {{ define "content" }}
     <main class="container flex flex-wrap -mt-32 py-16 flex-grow bg-primary sm:rounded-xl">
         <div class="w-full md:w-1/2 md:px-2">
-            {{ partial "careerList.html" (dict "items" (sort .Site.Data.career.jobs "from" "desc") "title" "emplois" ) }}
+            {{ partial "careerList.html" (dict "items" (sort (index .Site.Data .Site.Language.Lang).career.jobs "to" "desc") "title" (i18n "career.jobs") ) }}
         </div>
         <div class="w-full md:w-1/2 md:px-2 pt-16 md:pt-0">
-            {{ partial "careerList.html" (dict "items" (sort .Site.Data.career.graduates "from" "desc") "title" "diplômes" ) }}
+            {{ partial "careerList.html" (dict "items" (sort (index .Site.Data .Site.Language.Lang).career.graduates "from" "desc") "title" (i18n "career.diplomas") ) }}
         </div>
     </main>
 {{ end }}

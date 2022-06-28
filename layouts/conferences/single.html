@@ -8,19 +8,19 @@
     <main class="container -mt-32 py-16 flex-grow bg-primary sm:rounded-xl">
         <div class="flex flex-wrap">
             <div class="w-full md:w-1/4 pr-0 md:pr-8">
-                <p class="pb-4 underline italics">Informations utiles:</p>
+                <p class="pb-4 underline italics">{{ i18n "talks.useful_links" }}:</p>
                 <p class="py-2">{{ .Params.postcode }}, {{ .Params.city }}</p>
                 <p class="py-2">{{ .Params.place }}</p>
                 <p class="py-2">
                     <a href="{{ .Params.link }}" target="_blank" rel="noopener noreferrer nofollow">
-                        Lien vers les places
+                        {{ i18n "talks.places" }}
                     </a>
                 </p>
                 <p class="py-2">
                     <a href="/conferences" class="flex">
-                        <svg class="w-4 h-4 my-auto" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <svg class="w-4 h-4 my-auto mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm.707-10.293a1 1 0 00-1.414-1.414l-3 3a1 1 0 000 1.414l3 3a1 1 0 001.414-1.414L9.414 11H13a1 1 0 100-2H9.414l1.293-1.293z" clip-rule="evenodd"></path>
-                        </svg> Retour à la liste
+                        </svg> {{ i18n "talks.return_to_list" }}
                     </a>
                 </p>
             </div>

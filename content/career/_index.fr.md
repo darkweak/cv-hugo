@@ -1,4 +1,4 @@
 ---
 translationKey: career
-title: My career
+title: Ma carrière
 ---

@@ -1,0 +1,166 @@
+- name: Outils
+  items:
+    - name: Git
+      url: https://wikipedia.org/wiki/Git
+    - name: Travis
+      url: https://travis-ci.org
+    - name: Circle CI
+      url: https://circleci.com
+    - name: Github Actions
+      url: https://github.com/features/actions
+    - name: Docker
+      url: https://www.docker.com
+    - name: Gitlab
+      url: https://about.gitlab.com
+    - name: GitHub
+      url: https://github.com
+    - name: Gatling
+      url: https://gatling.io
+    - name: Jest
+      url: https://jestjs.io
+    - name: Behat
+      url: https://behat.org
+    - name: Cypress
+      url: https://cypress.io
+    - name: PHPUnit
+      url: https://phpunit.de
+    - name: go test
+      url: https://golang.org/pkg/cmd/go/internal/test/
+- name: Frameworks
+  items:
+    - name: Material UI
+      url: https://material-ui.com
+    - name: Bootstrap
+      url: https://getbootstrap.com
+    - name: Materialize
+      url: http://materializecss.com
+    - name: Bulma
+      url: https://bulma.io
+    - name: TailwindCSS
+      url: https://tailwindcss.com
+    - name: CakePHP
+      url: https://cakephp.org
+    - name: Symfony
+      url: https://symfony.com
+    - name: Laravel
+      url: https://laravel.com
+    - name: .NET
+      url: https://www.microsoft.com/net
+    - name: JQuery
+      url: https://jquery.com
+    - name: Cordova
+      url: https://cordova.apache.org
+    - name: Ionic
+      url: https://ionicframework.com
+    - name: ReactNative
+      url: https://facebook.github.io/react-native
+    - name: Electron
+      url: https://electronjs.org
+    - name: API Platform
+      url: https://api-platform.com
+    - name: Ant Design
+      url: https://ant.design
+    - name: Semantic UI
+      url: https://semantic-ui.com
+    - name: ReactJS
+      url: https://reactjs.org
+    - name: Vuejs
+      url: https://vuejs.org
+    - name: Nextjs
+      url: https://nextjs.org
+    - name: Ruby on Rails
+      url: https://rubyonrails.org
+    - name: Hugo
+      url: https://gohugo.io
+- name: Langages
+  items:
+    - name: Go
+      url: https://golang.org
+    - name: PHP
+      url: https://www.php.net
+    - name: Ruby
+      url: https://www.ruby-lang.org
+    - name: Javascript
+      url: https://developer.mozilla.org/fr/docs/Web/JavaScript
+    - name: Python
+      url: https://www.python.org
+    - name: Java
+      url: https://www.java.com
+    - name: Scala
+      url: https://www.scala-lang.org
+    - name: C#
+      url: https://wikipedia.org/wiki/C_sharp
+    - name: HTML
+      url: https://developer.mozilla.org/fr/docs/Web/HTML
+    - name: CSS
+      url: https://developer.mozilla.org/fr/docs/Web/CSS
+- name: Base de données
+  items:
+    - name: SQLite
+      url: https://www.sqlite.org/index.html
+    - name: PostgreSQL
+      url: https://www.postgresql.org
+    - name: Mongo DB
+      url: https://www.mongodb.com
+    - name: GraphQL
+      url: https://graphql.org
+    - name: SQL
+      url: https://www.w3schools.com/sql
+    - name: MySQL
+      url: https://www.mysql.com
+    - name: Oracle
+      url: https://www.oracle.com
+    - name: MariaDB
+      url: https://mariadb.org
+- name: Ops
+  items:
+    - name: K3S
+      url: https://k3s.io
+    - name: K8S
+      url: https://kubernetes.io
+    - name: Ansible
+      url: https://www.ansible.com
+    - name: Swarm
+      url: https://docs.docker.com/engine/swarm
+    - name: Træfik
+      url: https://traefik.io
+    - name: Caddy
+      url: https://caddyserver.com
+    - name: Tyk
+      url: https://tyk.io
+    - name: Longhorn
+      url: https://longhorn.io
+    - name: Nginx
+      url: https://www.nginx.com
+    - name: Apache
+      url: https://httpd.apache.org
+    - name: Varnish
+      url: https://varnish-cache.org
+    - name: Kong
+      url: https://konghq.com/kong
+    - name: Azure
+      url: https://azure.microsoft.com
+    - name: AWS
+      url: https://aws.amazon.com
+    - name: GCP
+      url: https://cloud.google.com
+    - name: Netlify
+      url: https://www.netlify.com
+    - name: Glusterfs
+      url: https://www.gluster.org
+    - name: Fedora
+      url: https://getfedora.org
+    - name: MacOS
+      url: https://www.apple.com
+    - name: Android
+      url: https://www.android.com
+    - name: iOS
+      url: https://www.apple.com
+    - name: Debian
+      url: https://www.debian.org
+    - name: Kali
+      url: https://www.kali.org
+    - name: Ubuntu
+      url: https://ubuntu.com
+    - name: Windows
+      url: https://www.microsoft.com

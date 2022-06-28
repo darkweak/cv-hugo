@@ -1,35 +1,35 @@
 jobs:
-  - name: Développeur freelance
+  - name: Freelance developer
     location: Auto-entreprise
     from: 2019-02-10
     to:
     place: 75000 PARIS
-  - name: Consultant Go
+  - name: Go consultant
     location: Klanik
     from: 2022-04-11
     to:
     place: 75000 PARIS
-  - name: Développeur Go
+  - name: Go architect
     location: Actirise / Bricks
     from: 2021-10-04
     to: 2022-04-08
     place: 59000 LILLE
-  - name: Développeur full-stack
+  - name: Full-stack developer
     location: Les-Tilleuls.coop
     from: 2018-07-02
     to: 2021-10-01
     place: 59000 LILLE
-  - name: Auxiliaire de vacances et technicien de maintenance en milieu bancaire
+  - name: Bank maintenance technician
     location: Société Générale
     from: 2017-08-07
     to: 2017-09-01
     place: 51100 REIMS
-  - name: Boucher en grande distribution
+  - name: Retail butcher
     location: E.Leclerc
     from: 2017-06-26
     to: 2017-08-05
     place: 08400 VOUZIERS
-  - name: Animateur en centre aéré
+  - name: Camp leader
     location: Centre aéré
     from: 2016-07-04
     to: 2016-07-22

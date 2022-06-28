@@ -4,10 +4,17 @@
         {{ partial "head.html" . }}
     </head>
     <body class="flex flex-col font-sans min-h-screen bg-primary">
-        {{ partial "navbar.html" (dict "navbar" .Site.Data.navbar "path" .RelPermalink ) }}
+        {{ partial "navbar.html" (dict "navbar" .Site.Menus.navbar "path" .RelPermalink "Site" .Site "Translations" .AllTranslations) }}
         <div class="header">
             <div class="font-extrabold text-4xl md:text-5xl lg:text-6xl text-center pt-24 pb-48 md:pb-64 container">
-                {{ block "title" . }}{{ end }}
+                {{ block "title" . }}
+                    <h1 class="text-white">
+                        {{ i18n (printf "%s%s" .Params.translationkey ".title") }}
+                    </h1>
+                    <h2 class="text-white text-inherit">
+                        {{ i18n (printf "%s%s" .Params.translationkey ".subtitle") }}
+                    </h2>
+                {{ end }}
             </div>
         </div>
         {{ block "content" . }}{{ end }}

@@ -1,10 +1,3 @@
-{{ define "title" }}
-    <h1 class="text-white">
-        CONFÉRENCES
-    </h1>
-    <h2 class="text-white text-inherit">PASSÉES ET À VENIR</h2>
-{{ end }}
-
 {{ define "content" }}
     <main class="container -mt-32 py-16 flex-grow bg-primary sm:rounded-xl">
         {{ partial "conferenceList.html" (dict "conferences" (sort .Pages "Date" "desc")) }}
