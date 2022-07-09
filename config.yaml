@@ -50,14 +50,6 @@ languages:
         - name: Compétences
           url: /skills
           weight: 5
-  es:
-    languageName: Spanish
-    weight: 3
-    menu:
-      navbar:
-        - identifier: home
-          name: Casa
-          url: /
 
 author:
   name: darkweak

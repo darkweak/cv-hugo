@@ -40,10 +40,15 @@ gulp.task('js', function () {
     .pipe(gulp.dest('./static/js/'));
 });
 
+gulp.task('pdf', function () {
+  return gulp.src("src/pdf/*.pdf")
+    .pipe(gulp.dest('./static/pdf/'));
+});
+
 gulp.task('watch-css', function() {
   gulp.watch('./src/css/*.css', gulp.series('dev-css'));
 });
 
-gulp.task('dev', gulp.series('dev-css', 'js'));
+gulp.task('dev', gulp.series('dev-css', 'js', 'pdf'));
 
-gulp.task('build', gulp.series('build-css', 'js'));
+gulp.task('build', gulp.series('build-css', 'js', 'pdf'));

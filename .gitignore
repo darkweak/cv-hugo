@@ -104,3 +104,5 @@ public/
 
 # TernJS port file
 .tern-port
+
+.hugo_build.lock

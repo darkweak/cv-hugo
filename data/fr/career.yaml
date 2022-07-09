@@ -4,26 +4,38 @@ jobs:
     from: 2019-02-10
     to:
     place: 75000 PARIS
+    description: |
+      Audits, développements, coaching, expertise sur diverses technos. Gestion de serveurs, monitoring et mise en place de clusters.
   - name: Consultant Go
     location: Klanik
     from: 2022-04-11
     to:
     place: 75000 PARIS
+    description: |
+      En mission pour OVHCloud, je fais de la création d'API Go et du maintient du code perl existant.
+      Utilisation de Gin, Echo et mise en place de la CI/CD pour assurer la livraison du projet.
   - name: Architecte Go
     location: Actirise / Bricks
     from: 2021-10-04
     to: 2022-04-08
     place: 59000 LILLE
+    description: |
+      Développement d'un système alternatif à Google Ads afin de se connecter directement aux DSP (Bidswitch, Xandr). 
+      Utilisation de Clickhouse pour stocker les données, développement de la solution en Golang, mise en place de CI/CD.
   - name: Développeur full-stack
     location: Les-Tilleuls.coop
     from: 2018-07-02
     to: 2021-10-01
     place: 59000 LILLE
+    description: |
+      Développeur ReactJS, Symfony et API-Platform. Intervention chez divers clients, que ça soit pour du retail ou d'autres sujets (Suez, alicesgarden, Leroy Merlin).
   - name: Auxiliaire de vacances et technicien de maintenance en milieu bancaire
     location: Société Générale
     from: 2017-08-07
     to: 2017-09-01
     place: 51100 REIMS
+    description: |
+      Maintien et développement de solutions pour automatiser les tâches redondantes. Réalisation d'un trombinoscope interne.
   - name: Boucher en grande distribution
     location: E.Leclerc
     from: 2017-06-26

@@ -83,6 +83,10 @@
                aria-current="page">{{ .Name }}</a>
         </div>
     {{ end }}
+    <div class="w-full xl:w-1/2 py-2 px-0 lg:px-2">
+        <a href="{{ .Site.BaseURL}}pdf/cv-{{ $.Site.Language }}.pdf" class="text-secondary hover:bg-secondary hover:text-secondary no-underline px-3 py-2 rounded-md text-sm font-medium">CV</a>
+    </div>
+    
     <div class="w-full xl:w-1/2 py-2 px-3 lg:px-2 flex text-primary uppercase text-sm font-medium">
         {{ range $index, $translation := .Translations }}
             {{ if gt $index 0 }}

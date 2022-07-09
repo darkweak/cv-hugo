@@ -1,24 +1,34 @@
 jobs:
   - name: Freelance developer
-    location: Auto-entreprise
+    location: Self-entreprise
     from: 2019-02-10
     to:
     place: 75000 PARIS
+    description: |
+      Audits, developments, coaching, tech expert. Servers management, monitoring and clusters setup.
   - name: Go consultant
     location: Klanik
     from: 2022-04-11
     to:
     place: 75000 PARIS
+    description: |
+      OVHCloud mission, I created some Golang APIs, fix perl production bugs.
+      I used Gin and Echo as http servers, setup the CI/CD to ensure the project delivery.
   - name: Go architect
     location: Actirise / Bricks
     from: 2021-10-04
     to: 2022-04-08
     place: 59000 LILLE
+    description: |
+      Alternative Google Ads solution to connect to DSP liek Bidswitch or Xandr.
+      I used Clickhouse to store the data, the solution was written in Golang, setup the CI/CD.
   - name: Full-stack developer
     location: Les-Tilleuls.coop
     from: 2018-07-02
     to: 2021-10-01
     place: 59000 LILLE
+    description: |
+      Symfony, ReactJS and API Platform developer. I went at many clients from retail, or other subjects (Suez, alicesgarden, Leroy Merlin).
   - name: Bank maintenance technician
     location: Société Générale
     from: 2017-08-07
