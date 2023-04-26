@@ -60,7 +60,7 @@
     {{ range (sort (index .Site.Data .Site.Language.Lang).career.jobs "to" "desc") }}
       <div class="py-2">
         <span class="text-underline d-block">{{ .from | time.Format ":date_short" }} - {{ if and (ne .to "") (ne .to nil) }}{{ .to | time.Format ":date_short" }}{{ else }}{{ i18n "career.today" }}{{ end }}</span>
-        <span class="d-block">{{ .name }} à {{ .location }}, {{ .place }}</span>
+        <span class="d-block">{{ .name }} {{ i18n "common.at" }} {{ .location }}, {{ .place }}</span>
         <span class="d-block text-muted">{{ .description }}</span>
       </div>
     {{ end }}
@@ -68,7 +68,14 @@
     {{ range (sort (index .Site.Data .Site.Language.Lang).career.graduates "to" "desc") }}
       <div class="py-2">
         <span class="text-underline d-block">{{ .from | time.Format ":date_short" }} - {{ if and (ne .to "") (ne .to nil) }}{{ .to | time.Format ":date_short" }}{{ else }}{{ i18n "career.today" }}{{ end }}</span>
-        <span class="d-block">{{ .name }} à {{ .location }}, {{ .place }}</span>
+        <span class="d-block">{{ .name }} {{ i18n "common.at" }} {{ .location }}, {{ .place }}</span>
+      </div>
+    {{ end }}
+    <h3 class="text-underline text-capitalize">{{ i18n "talks.talks" }}</h3>
+    {{ range (sort (where .Site.RegularPages "Type" "conferences") "Date" "desc") }}
+      <div class="py-2">
+        <h4 class="text-underline text-capitalize">{{ .Params.Date.Format "02/01/2006" }} - {{ .Params.City }}</h4>
+        {{ .Params.Name }}
       </div>
     {{ end }}
   </div>

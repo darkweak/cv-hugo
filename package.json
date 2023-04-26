@@ -5,7 +5,8 @@
   "description": "A boilerplate for a Hugo site based on Tailwind CSS",
   "scripts": {
     "start": "gulp dev && hugo server",
-    "deploy": "gulp build && hugo --minify"
+    "deploy": "gulp build && hugo --minify",
+    "pdf": "wkhtmltopdf http://localhost:1313/fr/cv/ src/pdf/cv-fr.pdf && wkhtmltopdf http://localhost:1313/cv/ src/pdf/cv-en.pdf"
   },
   "repository": {
     "type": "git",

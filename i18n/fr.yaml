@@ -8,6 +8,8 @@ career:
   diplomas: diplômes
   experiences: Expériences professionnelles
   today: Aujourd'hui
+common:
+  at: à
 home:
   title: SYLVAIN COMBRAQUE
   subtitle: DÉVELOPPEUR - CONFÉRENCIER
@@ -20,3 +22,4 @@ talks:
   useful_links: Informations utiles
   return_to_list: Retour à la liste
   places: Lien vers les places
+  talks: conférences

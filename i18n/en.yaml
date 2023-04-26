@@ -8,6 +8,8 @@ career:
   diplomas: diplomas
   experiences: Professional experiences
   today: Today
+common:
+  at: at
 home:
   title: SYLVAIN COMBRAQUE
   subtitle: DEVELOPER - SPEAKER
@@ -20,3 +22,4 @@ talks:
   useful_links: Useful informations
   return_to_list: Go back to the list
   places: Register to the event
+  talks: talks

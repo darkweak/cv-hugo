@@ -106,3 +106,4 @@ public/
 .tern-port
 
 .hugo_build.lock
+.DS_Store

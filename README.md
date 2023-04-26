@@ -19,8 +19,5 @@ The fully working demo is available [here https://xenodochial-newton-16b494.netl
 ## Light mode
 ![lightmode](docs/lightmode.png)
 
-## Responsive
-![responsive](docs/responsive.png)
-
 ---
 You can reuse this theme.
