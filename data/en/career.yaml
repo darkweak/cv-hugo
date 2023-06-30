@@ -9,7 +9,7 @@ jobs:
   - name: Go consultant
     location: Klanik
     from: 2022-04-11
-    to:
+    to: 2022-08-19
     place: 75000 PARIS
     description: |
       OVHCloud mission, I created some Golang APIs, fix perl production bugs.

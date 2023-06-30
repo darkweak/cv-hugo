@@ -9,7 +9,7 @@ jobs:
   - name: Consultant Go
     location: Klanik
     from: 2022-04-11
-    to:
+    to: 2022-08-19
     place: 75000 PARIS
     description: |
       En mission pour OVHCloud, je fais de la création d'API Go et du maintient du code perl existant.
