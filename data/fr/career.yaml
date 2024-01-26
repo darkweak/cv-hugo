@@ -6,6 +6,22 @@ jobs:
     place: 75000 PARIS
     description: |
       Audits, développements, coaching, expertise sur diverses technos. Gestion de serveurs, monitoring et mise en place de clusters.
+    missions:
+      BNP: |
+        Développement d'une plateforme, une sorte de marketplace, où les équipes internes peuvent choisir les services IT qu'ils souhaitent (par exemple: un cluster k8s, une base de données, etc...) avec une API écrite en golang
+        et un front en ReactJS et Typescript. Utilisation de Postgres pour la base de données relationnelle et un cluster redis pour mettre en cache des résultats de process coûteux, garder en mémoire des objets et mise en place
+        de notifications en temps réel. Utilisation de docker-compose pour l'architecture de dev et kubernetes pour les serveurs de production.
+      Platform.sh: |
+        Travail sur leur cache HTTP basé sur le projet open-source Souin et les aider à améliorer leurs performances sur leur infrastructure.
+        Utilisation de gatling et vegeta pour effectuer des benchmarks et tester les performances du cache HTTP, mise en place d'une CI/CD pour lancer les tests unitaires, les tests E2E et assurer un code coverage minimal.
+      Proarmy: |
+        Développement d'un script pour récupérer et indexer les prix des concurrents, leurs réductions en utilisant la librairie go-colly et création d'une platform pour consulter les augmentations/diminutions des prix en utilisant
+        une application Symfony classique avec Twig pour le rendu HTML.
+        Mise en place de grafana + prometheus pour monitorer la vie de l'application.
+      Redbull: |
+        Mise en place de l'architecture pour supporter un évènement en ligne de Redbull pouvant accueillant plus de 100.000 utilisateurs en simultané.
+        Contraintes de résilience et gestion de la scalabilité, et mise en place de différentes couches réseau pour la discussion entre les services.
+        Utilisation d'ansible pour déployer toute la stack d'applications, chaque application a été conteneurisée et utilisation d'outils pour effectuer des stress-tests sur un cluster kubernetes.
   - name: Consultant Go
     location: Klanik
     from: 2022-04-11

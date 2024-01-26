@@ -32,6 +32,9 @@
       padding-top: 0.5rem;
       padding-bottom: 0.5rem;
     }
+    .pl-4 {
+      padding-left: 1rem;
+    }
     .text-underline {
         text-decoration: underline;
     }
@@ -62,6 +65,11 @@
         <span class="text-underline d-block">{{ .from | time.Format ":date_short" }} - {{ if and (ne .to "") (ne .to nil) }}{{ .to | time.Format ":date_short" }}{{ else }}{{ i18n "career.today" }}{{ end }}</span>
         <span class="d-block">{{ .name }} {{ i18n "common.at" }} {{ .location }}, {{ .place }}</span>
         <span class="d-block text-muted">{{ .description }}</span>
+        <ul class="pl-4">
+          {{ range $index, $v := .missions }}
+          <li>{{ $index }}: <span class="text-muted">{{ $v }}</span></li>
+          {{ end }}
+        </ul>
       </div>
     {{ end }}
     <h3 class="text-underline text-capitalize">{{ i18n "career.diplomas" }}</h3>

@@ -6,6 +6,20 @@ jobs:
     place: 75000 PARIS
     description: |
       Audits, developments, coaching, tech expert. Servers management, monitoring and clusters setup.
+    missions:
+      BNP: |
+        Work on a kind of marketplace where internal can chose the IT services they want (a k8s cluster, database or whatever) with an API written in golang and a frontend written using ReactJS and Typescript.
+        Postgres as database with a redis cluster for some caching compute and keep in-memory some stuff and real-time notifications setup. Docker-compose stack for dev and kubernetes in production servers.
+      Platform.sh: |
+        Work on their HTTP caching based on the Souin open-source project and help them to improve the performance of their infrastructure.
+        Used gatling and vegeta to benchmark the HTTP cache performances, setup a CI/CD to run unit tests, E2E tests and ensure a minimal code coverage ratio.
+      Proarmy: |
+        Developed a script to scrap and index competitors prices, discounts using go-colly, and a platform to view the increased/decreased prices using a plain app with twig as render engine.
+        Setup grafana + prometheus to monitor the application health.
+      Redbull: |
+        Setup the infrastructure to support an online Redbull event with 100k+ customers.
+        It had to ensure the scalability and have the different services to discuss together.
+        Used ansible to deploy the full applications stack, every applications was dockerized and used some tools to stress-test the infrastructure on a kubernetes cluster.
   - name: Go consultant
     location: Klanik
     from: 2022-04-11
