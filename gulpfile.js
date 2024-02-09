@@ -45,10 +45,15 @@ gulp.task('pdf', function () {
     .pipe(gulp.dest('./static/pdf/'));
 });
 
+gulp.task('images', function () {
+  return gulp.src("src/images/*")
+    .pipe(gulp.dest('./static/images/'));
+});
+
 gulp.task('watch-css', function() {
   gulp.watch('./src/css/*.css', gulp.series('dev-css'));
 });
 
-gulp.task('dev', gulp.series('dev-css', 'js', 'pdf'));
+gulp.task('dev', gulp.series('dev-css', 'js', 'images', 'pdf'));
 
-gulp.task('build', gulp.series('build-css', 'js', 'pdf'));
+gulp.task('build', gulp.series('build-css', 'js', 'images', 'pdf'));
