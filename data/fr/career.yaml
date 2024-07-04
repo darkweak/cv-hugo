@@ -7,6 +7,10 @@ jobs:
     description: |
       Audits, développements, coaching, expertise sur diverses technos. Gestion de serveurs, monitoring et mise en place de clusters.
     missions:
+      Numspot: |
+        Développement d'un IAM as a Service, certifié SNC (secnumcloud) permettant de faire de l’autorisation granulaire par personne, par entitié, par groupe.
+        API écrite en Golang (middleware Gin backé par Krakend), tests d’intégration avec K6, test unitaires validant les race-conditions, mutation testing (gremlins), opentracing avec open-telemetry.
+        Utilisation d'Ory pour l'iam, docker compose en local, k8s sur les serveurs de dev/int/prod, postgresql pour le stockage de la donnée.
       BNP: |
         Développement d'une plateforme, une sorte de marketplace, où les équipes internes peuvent choisir les services IT qu'ils souhaitent (par exemple: un cluster k8s, une base de données, etc...) avec une API écrite en golang
         et un front en ReactJS et Typescript. Utilisation de Postgres pour la base de données relationnelle et un cluster redis pour mettre en cache des résultats de process coûteux, garder en mémoire des objets et mise en place
