@@ -7,6 +7,12 @@ jobs:
     description: |
       Audits, développements, coaching, expertise sur diverses technos. Gestion de serveurs, monitoring et mise en place de clusters.
     missions:
+      Electra: |
+        Transition d'un monolithe Rails vers Go. Implémentation de la spécification OCPI.
+        Utilisation de NATS pour le système de queueing, gqlgen pour la génération de structures pour l'api GraphQL et oapi-codegen couplé à TSP pour la génération des endpoints.
+        Test unitaires validant les race-conditions, mutation testing (gremlins), opentracing avec open-telemetry.
+        Utilisation de docker compose en local, k8s sur les serveurs de staging/prod, postgresql pour le stockage de la donnée.
+        Référent technique de la partie Go et gestion d'une équipe de 7 développeurs.
       Numspot: |
         Développement d'un IAM as a Service, certifié SNC (secnumcloud) permettant de faire de l’autorisation granulaire par personne, par entitié, par groupe.
         API écrite en Golang (middleware Gin backé par Krakend), tests d’intégration avec K6, test unitaires validant les race-conditions, mutation testing (gremlins), opentracing avec open-telemetry.
