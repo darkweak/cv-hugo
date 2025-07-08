@@ -1,90 +1,105 @@
 {{ define "content" }}
-  <style>
-    .bg-primary {
-        background-color: #2c3e50;
-    }
-    .primary {
-        color: #2c3e50;
-    }
-    .text-center {
-        text-align: center;
-    }
-    .w-100 {
-        width: 100%;
-    }
-    .d-block {
-        display: block;
-    }
-    .text-muted {
-        color: dimgrey;
-    }
-    .no-decoration {
-        text-decoration: none;
-    }
-    .fs-30 {
-        font-size: 30px;
-    }
-    div {
-        padding: 0;
-        margin: 0;
-    }
-    .py-2 {
-      padding-top: 0.5rem;
-      padding-bottom: 0.5rem;
-    }
-    .pl-4 {
-      padding-left: 1rem;
-    }
-    .text-underline {
-        text-decoration: underline;
-    }
-    .text-capitalize {
-        text-transform: capitalize;
-    }
-    .d-flex {
-        display: inline-flex;
-    }
-  </style>
-  <div>
-    <h2 style="margin: auto">Curriculum vitae</h2>
-    <br/>
-    <br/>
-    <span class="d-block">Sylvain COMBRAQUE</span>
-    <span class="d-block">Github: <a href="https://github.com/darkweak">darkweak</a></span>
-    <span class="d-block">64 rue de Sèvres</span>
-    <span class="d-block">92100 Boulogne-Billancourt (FRANCE)</span>
-    <span class="d-block">Né le 01/11/1997</span>
-    <span class="d-block">Mail:
-      <a href="mailto:sylvaincombraque@hotmail.fr">sylvaincombraque@hotmail.fr</a>
-    </span>
-    <span class="d-block">Permis B + véhicule</span>
+<style>
+  .bg-primary {
+    background-color: #2c3e50;
+  }
 
-    <h3 class="text-underline">{{ i18n "career.experiences" }}</h3>
-    {{ range (sort (index .Site.Data .Site.Language.Lang).career.jobs "to" "desc") }}
-      <div class="py-2">
-        <span class="text-underline d-block">{{ .from | time.Format ":date_short" }} - {{ if and (ne .to "") (ne .to nil) }}{{ .to | time.Format ":date_short" }}{{ else }}{{ i18n "career.today" }}{{ end }}</span>
-        <span class="d-block">{{ .name }} {{ i18n "common.at" }} {{ .location }}, {{ .place }}</span>
-        <span class="d-block text-muted">{{ .description }}</span>
-        <ul class="pl-4">
-          {{ range $index, $v := .missions }}
-          <li>{{ $index }}: <span class="text-muted">{{ $v }}</span></li>
-          {{ end }}
-        </ul>
-      </div>
-    {{ end }}
-    <h3 class="text-underline text-capitalize">{{ i18n "career.diplomas" }}</h3>
-    {{ range (sort (index .Site.Data .Site.Language.Lang).career.graduates "to" "desc") }}
-      <div class="py-2">
-        <span class="text-underline d-block">{{ .from | time.Format ":date_short" }} - {{ if and (ne .to "") (ne .to nil) }}{{ .to | time.Format ":date_short" }}{{ else }}{{ i18n "career.today" }}{{ end }}</span>
-        <span class="d-block">{{ .name }} {{ i18n "common.at" }} {{ .location }}, {{ .place }}</span>
-      </div>
-    {{ end }}
-    <h3 class="text-underline text-capitalize">{{ i18n "talks.talks" }}</h3>
-    {{ range (sort (where .Site.RegularPages "Type" "conferences") "Date" "desc") }}
-      <div class="py-2">
-        <h4 class="text-underline text-capitalize">{{ .Params.Date.Format "02/01/2006" }} - {{ .Params.City }}</h4>
-        {{ .Params.Name }}
-      </div>
-    {{ end }}
+  .primary {
+    color: #2c3e50;
+  }
+
+  .text-center {
+    text-align: center;
+  }
+
+  .w-100 {
+    width: 100%;
+  }
+
+  .d-block {
+    display: block;
+  }
+
+  .text-muted {
+    color: dimgrey;
+  }
+
+  .no-decoration {
+    text-decoration: none;
+  }
+
+  .fs-30 {
+    font-size: 30px;
+  }
+
+  div {
+    padding: 0;
+    margin: 0;
+  }
+
+  .py-2 {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .pl-4 {
+    padding-left: 1rem;
+  }
+
+  .text-underline {
+    text-decoration: underline;
+  }
+
+  .text-capitalize {
+    text-transform: capitalize;
+  }
+
+  .d-flex {
+    display: inline-flex;
+  }
+</style>
+<div>
+  <h2 style="margin: auto">Curriculum vitae</h2>
+  <br />
+  <br />
+  <span class="d-block">Sylvain COMBRAQUE</span>
+  <span class="d-block">Github: <a href="https://github.com/darkweak">darkweak</a></span>
+  <span class="d-block">64 rue de Sèvres</span>
+  <span class="d-block">92100 Boulogne-Billancourt (FRANCE)</span>
+  <span class="d-block">Né le 01/11/1997</span>
+  <span class="d-block">Mail:
+    <a href="mailto:sylvaincombraque@hotmail.fr">sylvaincombraque@hotmail.fr</a>
+  </span>
+  <span class="d-block">Permis B + véhicule</span>
+
+  <h3 class="text-underline">{{ i18n "career.experiences" }}</h3>
+  {{ range (sort (index .Site.Data .Site.Language.Lang).career.jobs "to" "desc") }}
+  <div class="py-2">
+    <span class="text-underline d-block">{{ .from | time.Format ":date_short" }} - {{ if and (ne .to "") (ne .to nil)
+      }}{{ .to | time.Format ":date_short" }}{{ else }}{{ i18n "career.today" }}{{ end }}</span>
+    <span class="d-block">{{ .name }} {{ i18n "common.at" }} {{ .location }}, {{ .place }}</span>
+    <span class="d-block text-muted">{{ .description }}</span>
+    <ul class="pl-4">
+      {{ range $k, $v := .missions }}
+      <li>{{ $v.name }}: <span class="text-muted">{{ $v.content }}</span></li>
+      {{ end }}
+    </ul>
   </div>
+  {{ end }}
+  <h3 class="text-underline text-capitalize">{{ i18n "career.diplomas" }}</h3>
+  {{ range (sort (index .Site.Data .Site.Language.Lang).career.graduates "to" "desc") }}
+  <div class="py-2">
+    <span class="text-underline d-block">{{ .from | time.Format ":date_short" }} - {{ if and (ne .to "") (ne .to nil)
+      }}{{ .to | time.Format ":date_short" }}{{ else }}{{ i18n "career.today" }}{{ end }}</span>
+    <span class="d-block">{{ .name }} {{ i18n "common.at" }} {{ .location }}, {{ .place }}</span>
+  </div>
+  {{ end }}
+  <h3 class="text-underline text-capitalize">{{ i18n "talks.talks" }}</h3>
+  {{ range (sort (where .Site.RegularPages "Type" "conferences") "Date" "desc") }}
+  <div class="py-2">
+    <h4 class="text-underline text-capitalize">{{ .Params.Date.Format "02/01/2006" }} - {{ .Params.City }}</h4>
+    {{ .Params.Name }}
+  </div>
+  {{ end }}
+</div>
 {{ end }}

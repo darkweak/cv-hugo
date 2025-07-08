@@ -7,31 +7,54 @@ jobs:
     description: |
       Audits, développements, coaching, expertise sur diverses technos. Gestion de serveurs, monitoring et mise en place de clusters.
     missions:
-      Electra: |
-        Transition d'un monolithe Rails vers Go. Implémentation de la spécification OCPI.
-        Utilisation de NATS pour le système de queueing, gqlgen pour la génération de structures pour l'api GraphQL et oapi-codegen couplé à TSP pour la génération des endpoints.
-        Test unitaires validant les race-conditions, mutation testing (gremlins), opentracing avec open-telemetry.
-        Utilisation de docker compose en local, k8s sur les serveurs de staging/prod, postgresql pour le stockage de la donnée.
-        Référent technique de la partie Go et gestion d'une équipe de 7 développeurs.
-      Numspot: |
-        Développement d'un IAM as a Service, certifié SNC (secnumcloud) permettant de faire de l’autorisation granulaire par personne, par entitié, par groupe.
-        API écrite en Golang (middleware Gin backé par Krakend), tests d’intégration avec K6, test unitaires validant les race-conditions, mutation testing (gremlins), opentracing avec open-telemetry.
-        Utilisation d'Ory pour l'iam, docker compose en local, k8s sur les serveurs de dev/int/prod, postgresql pour le stockage de la donnée.
-      BNP: |
-        Développement d'une plateforme, une sorte de marketplace, où les équipes internes peuvent choisir les services IT qu'ils souhaitent (par exemple: un cluster k8s, une base de données, etc...) avec une API écrite en golang
-        et un front en ReactJS et Typescript. Utilisation de Postgres pour la base de données relationnelle et un cluster redis pour mettre en cache des résultats de process coûteux, garder en mémoire des objets et mise en place
-        de notifications en temps réel. Utilisation de docker-compose pour l'architecture de dev et kubernetes pour les serveurs de production.
-      Platform.sh: |
-        Travail sur leur cache HTTP basé sur le projet open-source Souin et les aider à améliorer leurs performances sur leur infrastructure.
-        Utilisation de gatling et vegeta pour effectuer des benchmarks et tester les performances du cache HTTP, mise en place d'une CI/CD pour lancer les tests unitaires, les tests E2E et assurer un code coverage minimal.
-      Proarmy: |
-        Développement d'un script pour récupérer et indexer les prix des concurrents, leurs réductions en utilisant la librairie go-colly et création d'une platform pour consulter les augmentations/diminutions des prix en utilisant
-        une application Symfony classique avec Twig pour le rendu HTML.
-        Mise en place de grafana + prometheus pour monitorer la vie de l'application.
-      Redbull: |
-        Mise en place de l'architecture pour supporter un évènement en ligne de Redbull pouvant accueillant plus de 100.000 utilisateurs en simultané.
-        Contraintes de résilience et gestion de la scalabilité, et mise en place de différentes couches réseau pour la discussion entre les services.
-        Utilisation d'ansible pour déployer toute la stack d'applications, chaque application a été conteneurisée et utilisation d'outils pour effectuer des stress-tests sur un cluster kubernetes.
+      - name: Electra
+        content: |
+          Transition d'un monolithe Rails vers Go. Implémentation de la spécification OCPI.
+          Utilisation de NATS pour le système de queueing, gqlgen pour la génération de structures pour l'api GraphQL et oapi-codegen couplé à TSP pour la génération des endpoints.
+          Test unitaires validant les race-conditions, mutation testing (gremlins), opentracing avec open-telemetry.
+          Utilisation de docker compose en local, k8s sur les serveurs de staging/prod, postgresql pour le stockage de la donnée.
+          Maintenance d'une webapp en ReactJS pur.
+          Référent technique de la partie Go et gestion d'une équipe de 7 développeurs.
+      - name: Pour la gloire - Ben PLG
+        content: |
+          Realisation du site de vente de merch du rappeur Lillois Ben PLG (https://pourlagloire.store).
+          Utilisation de NextJS, utilisation de l'API GraphQL de Bigwax pour les paniers et la récupération des articles et ainsi déterminer les soldouts, les stocks restants par tailles ou combo.
+          Mise en place d'un dashboard interne incluant de l'alerting, des graphes pour suivre les ventes grâce à chart.js.
+          Utilisation des contexts natifs, dispatch d'event JS natifs et intégration de l'API de bandsintown pour récupérer les concerts.
+          Déploiement automatique sur netlify, optimisation et mise en cache des assets, mise en place de webvitals classiques.
+      - name: Numspot
+        content: |
+          Développement d'un IAM as a Service, certifié SNC (secnumcloud) permettant de faire de l’autorisation granulaire par personne, par entitié, par groupe.
+          API écrite en Golang (middleware Gin backé par Krakend), tests d’intégration avec K6, test unitaires validant les race-conditions, mutation testing (gremlins), opentracing avec open-telemetry.
+          Utilisation d'Ory pour l'iam, docker compose en local, k8s sur les serveurs de dev/int/prod, postgresql pour le stockage de la donnée.
+      - name: BNP
+        content: |
+          Développement d'une plateforme, une sorte de marketplace, où les équipes internes peuvent choisir les services IT qu'ils souhaitent (par exemple: un cluster k8s, une base de données, etc...) avec une API écrite en golang
+          et un front en ReactJS et Typescript. Utilisation de Postgres pour la base de données relationnelle et un cluster redis pour mettre en cache des résultats de process coûteux, garder en mémoire des objets et mise en place
+          de notifications en temps réel. Utilisation de docker-compose pour l'architecture de dev et kubernetes pour les serveurs de production.
+      - name: Platform.sh
+        content: |
+          Travail sur leur cache HTTP basé sur le projet open-source Souin et les aider à améliorer leurs performances sur leur infrastructure.
+          Utilisation de gatling et vegeta pour effectuer des benchmarks et tester les performances du cache HTTP, mise en place d'une CI/CD pour lancer les tests unitaires, les tests E2E et assurer un code coverage minimal.
+      - name: Proarmy
+        content: |
+          Développement d'un script pour récupérer et indexer les prix des concurrents, leurs réductions en utilisant la librairie go-colly et création d'une platform pour consulter les augmentations/diminutions des prix en utilisant
+          une application Symfony classique avec Twig pour le rendu HTML.
+          Mise en place de grafana + prometheus pour monitorer la vie de l'application.
+      - name: Redbull
+        content: |
+          Mise en place de l'architecture pour supporter un évènement en ligne de Redbull pouvant accueillant plus de 100.000 utilisateurs en simultané.
+          Contraintes de résilience et gestion de la scalabilité, et mise en place de différentes couches réseau pour la discussion entre les services.
+          Utilisation d'ansible pour déployer toute la stack d'applications, chaque application a été conteneurisée et utilisation d'outils pour effectuer des stress-tests sur un cluster kubernetes.
+  - name: Enseignant vacataire
+    location: IUT de Reims
+    from: 2024-01-01
+    to:
+    place: 51100 Reims
+    description: |
+      Enseignant vacataire à l'IUT de Reims dans les matières ReactJS ainsi que Symfony.
+      Enseignement React, autentification via les sessions Symfony, autentification JWT et aussi SSO, découverte de Redux, wouter et Typescript. Mise en place de service worker en utilisant workbox.
+      Enseignement Symfony, utilisation d'API Platform, mise en place de tests unitaires (initiation au TDD), utilisation d'outils de lint comme GrumPHP, Symfony UX, AssetMapper
   - name: Consultant Go
     location: Klanik
     from: 2022-04-11

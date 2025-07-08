@@ -7,30 +7,52 @@ jobs:
     description: |
       Audits, developments, coaching, tech expert. Servers management, monitoring and clusters setup.
     missions:
-      Electra: |
-        Transitioning a Rails monolith to Go. Implementing the OCPI specification.
-        Using NATS for the queueing system, gqlgen for generating structures for the GraphQL API, and oapi-codegen coupled with TSP for generating endpoints.
-        Unit testing validating race conditions, mutation testing (gremlins), and opentracing with open-telemetry.
-        Using Docker Compose locally, k8s on staging/production servers, and PostgreSQL for data storage.
-        Technical lead for the Go component and managing a team of seven developers.
-      Numspot: |
-        Development of an SNC-certified IAM as a Service (secnumcloud) enabling granular authorization by person, entity or group.
-        API written in Go (Gin middleware backed by Krakend), integration tests with K6, unit tests validating race-conditions, mutation testing (gremlins), opentracing with open-telemetry.
-        Used Ory for iam, docker compose for dev, k8s on int/prod servers, postgresql for data storage.
-      BNP: |
-        Work on a kind of marketplace where internal can chose the IT services they want (a k8s cluster, database or whatever) with an API written in golang and a frontend written using ReactJS and Typescript.
-        Postgres as database with a redis cluster for some caching compute and keep in-memory some stuff and real-time notifications setup. Docker-compose stack for dev and kubernetes in production servers.
-      Platform.sh: |
-        Work on their HTTP caching based on the Souin open-source project and help them to improve the performance of their infrastructure.
-        Used gatling and vegeta to benchmark the HTTP cache performances, setup a CI/CD to run unit tests, E2E tests and ensure a minimal code coverage ratio.
-      Proarmy: |
-        Developed a script to scrap and index competitors prices, discounts using go-colly, and a platform to view the increased/decreased prices using a plain app with twig as render engine.
-        Setup grafana + prometheus to monitor the application health.
-      Redbull: |
-        Setup the infrastructure to support an online Redbull event with 100k+ customers.
-        It had to ensure the scalability and have the different services to discuss together.
-        Used ansible to deploy the full applications stack, every applications was dockerized and used some tools to stress-test the infrastructure on a kubernetes cluster.
-  - name: Go consultant
+      - name: Electra
+        content: |
+          Transitioning a Rails monolith to Go. Implementing the OCPI specification.
+          Using NATS for the queueing system, gqlgen for generating structures for the GraphQL API, and oapi-codegen coupled with TSP for generating endpoints.
+          Unit testing validating race conditions, mutation testing (gremlins), and opentracing with open-telemetry.
+          Using Docker Compose locally, k8s on staging/production servers, and PostgreSQL for data storage.
+          Also maintained a pure ReactJS webapp.
+          Technical lead for the Go component and managing a team of seven developers.      
+      - name: Pour la gloire - Ben PLG
+        content: |
+          Creation of a merch sales website for Lille rapper Ben PLG (https://pourlagloire.store).
+          Using NextJS, Bigwax's GraphQL API for carts and item retrieval, and thus determining sold-outs and remaining stock by size or combo.
+          Implementation of an internal dashboard including alerts and graphs to track sales using chart.js.
+          Use of native contexts, native JS event dispatch, and integration of the Bandsintown API to retrieve concerts.
+          Automatic deployment on Netlify, asset optimization and caching, and implementation of classic Webvitals.
+      - name: Numspot
+        content: |
+          Development of an SNC-certified IAM as a Service (secnumcloud) enabling granular authorization by person, entity or group.
+          API written in Go (Gin middleware backed by Krakend), integration tests with K6, unit tests validating race-conditions, mutation testing (gremlins), opentracing with open-telemetry.
+          Used Ory for iam, docker compose for dev, k8s on int/prod servers, postgresql for data storage.
+      - name: BNP
+        content: |
+          Work on a kind of marketplace where internal can chose the IT services they want (a k8s cluster, database or whatever) with an API written in golang and a frontend written using ReactJS and Typescript.
+          Postgres as database with a redis cluster for some caching compute and keep in-memory some stuff and real-time notifications setup. Docker-compose stack for dev and kubernetes in production servers.
+      - name: Platform.sh
+        content: |
+          Work on their HTTP caching based on the Souin open-source project and help them to improve the performance of their infrastructure.
+          Used gatling and vegeta to benchmark the HTTP cache performances, setup a CI/CD to run unit tests, E2E tests and ensure a minimal code coverage ratio.
+      - name: Proarmy
+        content: |
+          Developed a script to scrap and index competitors prices, discounts using go-colly, and a platform to view the increased/decreased prices using a plain app with twig as render engine.
+          Setup grafana + prometheus to monitor the application health.
+      - name: Redbull
+        content: |
+          Setup the infrastructure to support an online Redbull event with 100k+ customers.
+          It had to ensure the scalability and have the different services to discuss together.
+          Used ansible to deploy the full applications stack, every applications was dockerized and used some tools to stress-test the infrastructure on a kubernetes cluster.
+  - name: Part-time lecturer
+    location: IUT de Reims
+    from: 2024-01-01
+    to:
+    place: 51100 Reims
+    description: |
+      Part-time lecturer at the IUT of Reims, teaching ReactJS and Symfony.
+      Teaching React, authentication via Symfony sessions, JWT authentication, and SSO, exploring Redux, Wouter, and Typescript. Implementing service workers using Workbox.
+      Teaching Symfony, using API Platform, implementing unit tests (introduction to TDD), and using lint tools like GrumPHP, Symfony UX, and AssetMapper.  - name: Go consultant
     location: Klanik
     from: 2022-04-11
     to: 2022-08-19
