@@ -53,6 +53,7 @@ jobs:
       Part-time lecturer at the IUT of Reims, teaching ReactJS and Symfony.
       Teaching React, authentication via Symfony sessions, JWT authentication, and SSO, exploring Redux, Wouter, and Typescript. Implementing service workers using Workbox.
       Teaching Symfony, using API Platform, implementing unit tests (introduction to TDD), and using lint tools like GrumPHP, Symfony UX, and AssetMapper.  - name: Go consultant
+  - name: Golang consultant
     location: Klanik
     from: 2022-04-11
     to: 2022-08-19
@@ -75,21 +76,6 @@ jobs:
     place: 59000 LILLE
     description: |
       Symfony, ReactJS and API Platform developer. I went at many clients from retail, or other subjects (Suez, alicesgarden, Leroy Merlin).
-  - name: Bank maintenance technician
-    location: Société Générale
-    from: 2017-08-07
-    to: 2017-09-01
-    place: 51100 REIMS
-  - name: Retail butcher
-    location: E.Leclerc
-    from: 2017-06-26
-    to: 2017-08-05
-    place: 08400 VOUZIERS
-  - name: Camp leader
-    location: Centre aéré
-    from: 2016-07-04
-    to: 2016-07-22
-    place: 08130 SAINT-ETIENNE-À-ARNES
 graduates:
   - name: DUT INFORMATIQUE
     location: IUT REIMS

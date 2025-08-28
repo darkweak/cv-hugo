@@ -78,23 +78,6 @@ jobs:
     place: 59000 LILLE
     description: |
       Développeur ReactJS, Symfony et API-Platform. Intervention chez divers clients, que ça soit pour du retail ou d'autres sujets (Suez, alicesgarden, Leroy Merlin).
-  - name: Auxiliaire de vacances et technicien de maintenance en milieu bancaire
-    location: Société Générale
-    from: 2017-08-07
-    to: 2017-09-01
-    place: 51100 REIMS
-    description: |
-      Maintien et développement de solutions pour automatiser les tâches redondantes. Réalisation d'un trombinoscope interne.
-  - name: Boucher en grande distribution
-    location: E.Leclerc
-    from: 2017-06-26
-    to: 2017-08-05
-    place: 08400 VOUZIERS
-  - name: Animateur en centre aéré
-    location: Centre aéré
-    from: 2016-07-04
-    to: 2016-07-22
-    place: 08130 SAINT-ETIENNE-À-ARNES
 graduates:
   - name: DUT INFORMATIQUE
     location: IUT REIMS
