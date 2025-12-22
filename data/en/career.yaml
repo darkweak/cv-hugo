@@ -7,6 +7,12 @@ jobs:
     description: |
       Audits, developments, coaching, tech expert. Servers management, monitoring and clusters setup.
     missions:
+      - name: Oneex
+        content: |
+          Creation of a Go backend to enable the scanning of identity documents (passport, ID card, driver's license).
+          Use of Tesseract for optical character recognition (OCR), Gin as the web framework, and SQLite for data storage on the device.
+          Creation of a VueJS frontend to provide feedback to the user upon document capture.
+          Implementation of unit, integration, and end-to-end tests with GoDogs. Monitoring and tracing with Prometheus and OpenTelemetry, and notifications via Signal for privacy. Use of Docker for local development, deployment using Ansible on machines connected to tailscale subnets. Management of a team of 4 developers as the Go technical lead.
       - name: Electra
         content: |
           Transitioning a Rails monolith to Go. Implementing the OCPI specification.

@@ -7,7 +7,15 @@ jobs:
     description: |
       Audits, développements, coaching, expertise sur diverses technos. Gestion de serveurs, monitoring et mise en place de clusters.
     missions:
-      - name: Electra
+      - name: Oneex (2 mois)
+        content: |
+          Création d'un backend en Go pour permettre de scanner des documents d'identité (passeport, carte d'identité, permis de conduire). 
+          Utilisation de Tesseract pour la reconnaissance optique de caractères (OCR), Gin comme framework web, et SQLite pour le stockage des données sur le device.
+          Création d'un front en VueJS afin de donner un retour à l'utilisateur lors de la capture de son document.
+          Mise en place de tests unitaires, d'intégration, et de tests end-to-end avec godogs. Monitoring et tracing avec Prometheus et Open-telemetry et notifications sur Signal pour la confidentialité.
+          Utilisation de Docker pour le développement local, déploiement en utilisant ansible sur les machines connectés à des sous-réseaux tailscale.
+          Gestion d'une équipe de 4 développeurs en tant que lead technique Go.
+      - name: Electra (9 mois)
         content: |
           Transition d'un monolithe Rails vers Go. Implémentation de la spécification OCPI.
           Utilisation de NATS pour le système de queueing, gqlgen pour la génération de structures pour l'api GraphQL et oapi-codegen couplé à TSP pour la génération des endpoints.
@@ -15,19 +23,19 @@ jobs:
           Utilisation de docker compose en local, k8s sur les serveurs de staging/prod, postgresql pour le stockage de la donnée.
           Maintenance d'une webapp en ReactJS pur.
           Référent technique de la partie Go et gestion d'une équipe de 7 développeurs.
-      - name: Pour la gloire - Ben PLG
+      - name: Pour la gloire - Ben PLG (1 an +)
         content: |
           Realisation du site de vente de merch du rappeur Lillois Ben PLG (https://pourlagloire.store).
           Utilisation de NextJS, utilisation de l'API GraphQL de Bigwax pour les paniers et la récupération des articles et ainsi déterminer les soldouts, les stocks restants par tailles ou combo.
           Mise en place d'un dashboard interne incluant de l'alerting, des graphes pour suivre les ventes grâce à chart.js.
           Utilisation des contexts natifs, dispatch d'event JS natifs et intégration de l'API de bandsintown pour récupérer les concerts.
           Déploiement automatique sur netlify, optimisation et mise en cache des assets, mise en place de webvitals classiques.
-      - name: Numspot
+      - name: Numspot (5 mois)
         content: |
           Développement d'un IAM as a Service, certifié SNC (secnumcloud) permettant de faire de l’autorisation granulaire par personne, par entitié, par groupe.
           API écrite en Golang (middleware Gin backé par Krakend), tests d’intégration avec K6, test unitaires validant les race-conditions, mutation testing (gremlins), opentracing avec open-telemetry.
           Utilisation d'Ory pour l'iam, docker compose en local, k8s sur les serveurs de dev/int/prod, postgresql pour le stockage de la donnée.
-      - name: BNP
+      - name: BNP (3 ans)
         content: |
           Développement d'une plateforme, une sorte de marketplace, où les équipes internes peuvent choisir les services IT qu'ils souhaitent (par exemple: un cluster k8s, une base de données, etc...) avec une API écrite en golang
           et un front en ReactJS et Typescript. Utilisation de Postgres pour la base de données relationnelle et un cluster redis pour mettre en cache des résultats de process coûteux, garder en mémoire des objets et mise en place
@@ -36,12 +44,12 @@ jobs:
         content: |
           Travail sur leur cache HTTP basé sur le projet open-source Souin et les aider à améliorer leurs performances sur leur infrastructure.
           Utilisation de gatling et vegeta pour effectuer des benchmarks et tester les performances du cache HTTP, mise en place d'une CI/CD pour lancer les tests unitaires, les tests E2E et assurer un code coverage minimal.
-      - name: Proarmy
+      - name: Proarmy (5 ans +)
         content: |
           Développement d'un script pour récupérer et indexer les prix des concurrents, leurs réductions en utilisant la librairie go-colly et création d'une platform pour consulter les augmentations/diminutions des prix en utilisant
           une application Symfony classique avec Twig pour le rendu HTML.
           Mise en place de grafana + prometheus pour monitorer la vie de l'application.
-      - name: Redbull
+      - name: Redbull (1 an)
         content: |
           Mise en place de l'architecture pour supporter un évènement en ligne de Redbull pouvant accueillant plus de 100.000 utilisateurs en simultané.
           Contraintes de résilience et gestion de la scalabilité, et mise en place de différentes couches réseau pour la discussion entre les services.
