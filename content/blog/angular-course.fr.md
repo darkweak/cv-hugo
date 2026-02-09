@@ -1,44 +1,65 @@
 ---
-name: Cours Typescript
+name: Cours Angular
 image: https://sylvaincdn.000webhostapp.com/devcv/blog/traefik.png
 date: 2024-02-06
 ---
 
-> TypeScript is a strongly typed programming language that builds on JavaScript, giving you better tooling at any scale.
+> The framework for building scalable web apps with confidence · Productivity meets scalability · When performance matters.
 >
-> —<https://www.typescriptlang.org>
+> —<https://angular.dev>
 
-### Démarrage du projet Typescript
+### Démarrage du projet Angular
 
-Rendez-vous dans votre dossier préféré et lancez la commande
+Rendez-vous dans votre dossier préféré et lancez les commandes suivantes pour installer le framework Angular CLI et créer le projet
 ```bash
-npm create vite typescript-introduction
+npm install -g @angular/cli
+ng new climber-dashboard
 ```
 
-Sélectionnez le framework `React`, puis le variant `Typescript` seul, sans SWC, rendez-vous dans le dossier, installez les dépendances puis lancez le serveur de développement
+Activez ou non l'autocomplétion, n'activez pas la télémétrie (sauf si vous voulez envoyer vos données chez Google).  
+Sélectionnez le style `TailwindCSS`, désactivez le SSR/SSG (ça rajoutera trop de complexité, mais pour la connaissance, voici [une doc sur le SSR/SSG](https://laconsole.dev/blog/differences-ssr-csr-ssg)).  
+N'activez pas d'agents (sélectionnez None), on est là pour apprendre, pas pour expédier le sujet et prenez un café le temps de l'installation des différentes ressources.  
+Enfin, une fois que tout est installé, il suffit de se rendre dans le dossier du projet et lancer `npm run dev`
 
 ```bash
-cd typescript-introduction
-npm install
-npm run dev
+cd climber-dashboard
+npm run start
 ```
 
-Rendez-vous sur [localhost:5173](http://localhost:5173) pour voir votre page.
+Rendez-vous sur [localhost:4200](http://localhost:4200) pour voir votre page.
 
 ### Architecture et dépendances du projet
-Tout d'abord nous allons architecturer notre projet de la manière suivante
+Tout d'abord nous passer en revue les différents dossiers/fichiers importants du projet.
 ```md
-typescript-introduction
+climber-dashboard
 ├── src
-│   ├── components
-│   │   ├── atomic
-│   │   ├── layout
-│   │   ├── molecule
-│   │   └── page
-├── package.json
+│   ├── app
+│   │   ├── app.config.ts
+│   │   ├── app.css
+│   │   ├── app.html
+│   │   ├── app.routes.ts
+│   │   └── app.ts
+│   ├── index.html
+│   ├── main.ts
+│   └── styles.css
+├── .postcssrc.json
+├── angular.json
 ├── ...
 └── tsconfig.json
 ```
+* - `src` contient le code source de notre application.
+* - `src/index.html` est le fichier HTML principal de notre application, c'est la coquille vide qui servira à charger notre application dans sa balise `<app-root>`, c'est l'équivalent de la `div#root` dans un projet React.
+* - `src/main.ts` est le fichier principal de notre application, c'est dans ce fichier que nous pourrons configurer le bundler si nécessaire (nous n'en avons pas besoin dans ce projet, mais c'est toujorus bon à savoir qu'il existe).
+* - `src/styles.css` est le fichier CSS principal de notre application, il va charger tailwindcss.
+* - `src/app/app.config.ts` est le fichier de configuration de notre application, il va se charger de définir le routeur, gérer les erreurs/panic, c'est le cerveau de notre application.
+* - `src/app/app.html` est le fichier HTML de base de notre application, c'est l'équivalent de la `index.html` dans un projet React ou du `base.html.twig` dans un projet Symfony.
+* - `src/app/app.routes.ts` va contenir la liste des routes de notre application.
+* - `src/app/app.ts` est notre entrypoint, il correspond au `App.jsx` dans un projet React.
+* - `.postcssrc.json` est le fichier de configuration de postcss, ce qui servira à minifier le CSS et ne garder que les classes nécessaires.
+* - `angular.json` définit des règles de build, des dépendances (le fichier CSS final à importer par exemple), quel gestionnaire de package nous utiliserons (npm, pnpm ou yarn).
+
+Comme vous vous en doutez, le dossier qui nous intéresse le plus est le dossier `src`.
+
 Les différents dossiers vont nous permettre de s'y retrouver plus simplement dans notre application.
 Le dossier components contiendra tous nos composants (purs et des aggrégats).
 

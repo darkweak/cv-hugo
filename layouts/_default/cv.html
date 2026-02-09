@@ -78,10 +78,10 @@
     <span class="text-underline d-block">{{ .from | time.Format ":date_short" }} - {{ if and (ne .to "") (ne .to nil)
       }}{{ .to | time.Format ":date_short" }}{{ else }}{{ i18n "career.today" }}{{ end }}</span>
     <span class="d-block">{{ .name }} {{ i18n "common.at" }} {{ .location }}, {{ .place }}</span>
-    <span class="d-block text-muted">{{ .description }}</span>
+    <span class="d-block text-muted">{{ .description | transform.Markdownify }}</span>
     <ul class="pl-4">
       {{ range $k, $v := .missions }}
-      <li>{{ $v.name }}: <span class="text-muted">{{ $v.content }}</span></li>
+      <li>{{ $v.name }}: <span class="text-muted">{{ $v.content | transform.Markdownify }}</span></li>
       {{ end }}
     </ul>
   </div>
