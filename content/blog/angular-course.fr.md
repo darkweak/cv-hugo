@@ -60,8 +60,25 @@ climber-dashboard
 
 Comme vous vous en doutez, le dossier qui nous intéresse le plus est le dossier `src`.
 
+Nous allons mettre à jour notre fichier `tsconfig.json` avec cette configuration de `compilerOptions`:
+```json
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    // ...
+    "module": "preserve",
+    "baseUrl": "src",
+    "paths": {
+      "@/*": ["*"]
+    }
+    // ...
+```
+
+Cela va nous permettre d'avoir des paths plus sympathiques et surtout absolus plutôt que des paths relatifs.
+
+## Structure des dossiers
 Les différents dossiers vont nous permettre de s'y retrouver plus simplement dans notre application.
-Le dossier components contiendra tous nos composants (purs et des aggrégats).
+Le dossier `app/components` contiendra tous nos composants (purs et des aggrégats).
 
 * — `atomic` contiendra nos composants atomiques, c'est à dire ceux qui ne font que de l'affichage simple (exemple: un composant `H1` qui aura une propriété title et qui se contentera de rendre un élément HTML `h1` avec son contenu). Il faut les garder les plus purs possible.
 * — `molecule` contiendra nos composants composés de plusieurs atomes (`atomic`) et/ou de molécules afin de rendre un composant plus complexe (exemple: un composant `Card` qui rendra une `div` avec pour enfant un composant `Image` un composant `H1` et un composant `Badge`).
