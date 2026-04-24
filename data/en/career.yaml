@@ -7,6 +7,9 @@ jobs:
     description: |
       Audits, developments, coaching, tech expert. Servers management, monitoring and clusters setup.
     missions:
+      - name: Thales (2 mois)
+        content: |
+          Development of an operational application used in the field in a military context. Refactoring and restructuring the codebase to improve quality and maintainability, along with setting up a continuous integration pipeline (unit tests, linting). Backend development in Go with GraphQL (gqlgen) and frontend in Angular. Design of an interactive map to position units and resources in the field and manage mission orders.
       - name: Oneex
         content: |
           Creation of a Go backend to enable the scanning of identity documents (passport, ID card, driver's license).

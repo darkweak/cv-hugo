@@ -7,7 +7,10 @@ jobs:
     description: |
       Audits, développements, coaching, expertise sur diverses technos. Gestion de serveurs, monitoring et mise en place de clusters.
     missions:
-      - name: Oneex (2 mois)
+      - name: Thales (2 mois)
+        content: |
+          Développement d’une application opérationnelle utilisée sur le terrain en contexte militaire. Reprise et refactorisation de la base de code afin d’en améliorer la qualité et la maintenabilité, ainsi que mise en place d’une chaîne d’intégration continue (tests unitaires, lint). Développement du backend en Go avec GraphQL (gqlgen) et du frontend en Angular. Conception d’une carte interactive permettant de positionner des unités et des ressources sur le terrain et de piloter les ordres de mission.
+      - name: Oneex (3 mois)
         content: |
           Création d'un backend en Go pour permettre de scanner des documents d'identité (passeport, carte d'identité, permis de conduire). 
           Utilisation de Tesseract pour la reconnaissance optique de caractères (OCR), Gin comme framework web, et SQLite pour le stockage des données sur le device.
