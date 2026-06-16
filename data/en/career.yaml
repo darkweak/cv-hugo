@@ -7,7 +7,7 @@ jobs:
     description: |
       Audits, developments, coaching, tech expert. Servers management, monitoring and clusters setup.
     missions:
-      - name: Thales (2 mois)
+      - name: Thales
         content: |
           Development of an operational application used in the field in a military context. Refactoring and restructuring the codebase to improve quality and maintainability, along with setting up a continuous integration pipeline (unit tests, linting). Backend development in Go with GraphQL (gqlgen) and frontend in Angular. Design of an interactive map to position units and resources in the field and manage mission orders.
       - name: Oneex
@@ -40,6 +40,7 @@ jobs:
         content: |
           Work on a kind of marketplace where internal can chose the IT services they want (a k8s cluster, database or whatever) with an API written in golang and a frontend written using ReactJS and Typescript.
           Postgres as database with a redis cluster for some caching compute and keep in-memory some stuff and real-time notifications setup. Docker-compose stack for dev and kubernetes in production servers.
+          Use of Kafka as a pub-sub and queueing system to transfer data between microservices, but also between our applications and other BNP apps.
           Authenticate through **OIDC** with **keycloak**.
       - name: Platform.sh
         content: |
@@ -79,6 +80,7 @@ jobs:
     description: |
       Alternative Google Ads solution to connect to DSP liek Bidswitch or Xandr.
       I used Clickhouse to store the data, the solution was written in Golang, setup the CI/CD. Ingest 10M+ daily requests per day with opentracing and prometheus metrics.
+      Setup, administration, and use of Kafka to ingest millions of log records, and to implement a resilient, distributed microservices architecture. Use of topics to transmit data, with an "exactly-once" delivery strategy.
   - name: Full-stack developer
     location: Les-Tilleuls.coop
     from: 2018-07-02
